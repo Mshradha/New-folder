@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+       body{
+        background-color:lightgray;
+      }
+      #navbar{
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+
+      }
+      #user-detail{
+        /* border: solid 1px black; */
+        height: 50px;
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #user-detail>input{
+        width: 33%;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 3px;
+        
+      }
+      #user-detail>button{
+        width: 90px;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 3px;
+      }
+      #movie{
+        width: 40%;
+        border: solid 1px black;
+        margin: auto;
+        margin-top: 30px;
+      }
+      h2{
+        text-align: center;
+      }
+      img{
+      
+        width: 80%;
+        margin: auto;
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Checkout | Cost: 100/seat</h1>
+      <h1 id="wallet"></h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    </div>
+    <div id="user-detail">
+      <input type="text" id="user_name" placeholder="Enter Name">
+      <input type="number"id="number_of_seats" placeholder="No of seats">
+      <button id="confirm" onclick="bookticket()">Confirm</button>
+      <!-- input field to accept user name with id as "user_name"  -->
+      <!-- input field to accept number of seats with id as "number_of_seats"  -->
+      <!-- A submit button to confirm booking with id as "confirm"  -->
+    </div>
+
+    <div id="movie">
+      <!-- Append the selected movie for booking here -->
+      <!-- movie should have title and image  -->
+      <!-- It should be the same movie you selected for booking  -->
+    </div>
+  </body>
+</html>
+<script src="scripts\checkout.js"></script>
